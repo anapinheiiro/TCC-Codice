@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loiane Graner</title>
+    <link rel="shortcut icon" href="assets/LogoLoiane.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img class="logo" src="assets/LogoLoiane.png" alt="logo Loiane Gronner"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Cursos</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Contato</a></li>
+                    <li><a href="#">Cadastro</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="caixa-texto">
+            <h1>Loiane Training</h1>
+            <p>Angular, Java, Spring e mais... <br>
+            cursos online e gratuitos com certificado de participação! </p>
+            <a href="#" class="hero-btn">Saiba Mais</a>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- Portal -->
+
+        <section class="portal">
+            <h1>Courses we offer</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, quo?</p>
+        </section>
+
+        <!-- cursos -->
+       <section class="cursos">
+        <div class="card-container">
+            <div class="card">
+                <img src="assets/Angularcurso.png" alt="">
+                <div class="card-content">
+                    <h3>Angular</h3>
+                    <p>Completo</p>
+                    <a href="" class="btn">Saiba mais</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="assets/Javabasico.png" alt="">
+                <div class="card-content">
+                    <h3>Java Básico</h3>
+                    <p>Completo</p>
+                    <a href="" class="btn">Saiba mais</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="assets/EDAjava.png" alt="">
+                <div class="card-content">
+                    <h3>Estrutura de Dados com Java</h3>
+                    <p>Completo</p>
+                    <a href="" class="btn">Saiba mais</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="assets/CursoJavaIntermediario.png" alt="">
+                <div class="card-content">
+                    <h3>Java Intermediário</h3>
+                    <p>Completo</p>
+                    <a href="" class="btn">Saiba mais</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="assets/phonegap_cordova_loiane.png" alt="">
+                <div class="card-content">
+                    <h3>Phonegap e Apache Cordova</h3>
+                    <p>Completo</p>
+                    <a href="" class="btn">Saiba mais</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="assets/curso-crud-angular-spring.png" alt="">
+                <div class="card-content">
+                    <h3>CRUD Angular + Spring</h3>
+                    <p>Completo</p>
+                    <a href="" class="btn">Saiba mais</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="assets/curso-extjs4.png" alt="">
+                <div class="card-content">
+                    <h3>Fundamentos Ext JS 4</h3>
+                    <p>Completo</p>
+                    <a href="" class="btn">Saiba mais</a>
+                </div>
+            </div>
+        </div>
+
+       </section>
+          
+
+
+    </main>
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+
+    </script>
+</body>
+</html>
