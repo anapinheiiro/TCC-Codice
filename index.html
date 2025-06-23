@@ -7,6 +7,8 @@
     <link rel="shortcut icon" href="assets/LogoLoiane.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- carrossel  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     
 </head>
 <body>
@@ -17,11 +19,10 @@
                 <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Cursos</a></li>
+                    <li><a href="#cursos">Cursos</a></li>
                     <li><a href="#">Sobre</a></li>
                     <li><a href="#">Contato</a></li>
-                    <li><a href="#">Cadastro</a></li>
-                    <li><a href="#">Login</a></li>
+            
                 </ul>
             </div>
             <i class="fa fa-bars" onclick="showMenu()"></i>
@@ -40,7 +41,7 @@
         <!-- Portal -->
 
         <section class="portal">
-            <h1>Courses we offer</h1>
+            <h1>Lorem, ipsum dolor.</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, quo?</p>
 
             <div class="row">
@@ -61,74 +62,185 @@
             </div>
         </section>
 
-        <!-- cursos -->
-       <section class="cursos">
-        <div class="card-container">
-            <div class="card">
-                <img src="assets/Angularcurso.png" alt="">
-                <div class="card-content">
-                    <h3>Angular</h3>
-                    <p>Completo</p>
-                    <a href="" class="btn">Saiba mais</a>
-                </div>
-            </div>
 
-            <div class="card">
-                <img src="assets/Javabasico.png" alt="">
-                <div class="card-content">
-                    <h3>Java Básico</h3>
-                    <p>Completo</p>
-                    <a href="" class="btn">Saiba mais</a>
-                </div>
-            </div>
 
-            <div class="card">
-                <img src="assets/EDAjava.png" alt="">
-                <div class="card-content">
-                    <h3>Estrutura de Dados com Java</h3>
-                    <p>Completo</p>
-                    <a href="" class="btn">Saiba mais</a>
+<section class="cursos" id="cursos" >
+    
+           <div class="container swiper">
+            <div class="wrapper">
+              <div class="card-list swiper-wrapper">
+                <!-- card -->
+                <div class="card swiper-slide">
+                  <div class="card-image">
+                    <img src="assets/Angularcurso.png" alt="Curso Angular" />
+                    <div class="card-tag">Front-end</div>
+                  </div>
+                  <div class="card-content">
+                    <h3 class="card-title">Angular</h3>
+                    <p class="card-text"> Neste curso, você aprenderá a desenvolver com Angular e TypeScript, desde os conceitos básicos até a criação de uma aplicação completa com rotas e requisições ao servidor.</p>
+                    
+                     <div class="card-footer">
+                      <!-- <div class="card-profile">
+                         <img src="images/user-1.jpg" alt="Alex Smith" />
+                        <div class="card-profile-info">
+                          <span class="card-profile-name">Alex Smith</span>
+                          <span class="card-profile-role">UI Designer</span>
+                        </div> 
+                      </div> -->
+                      <a href="#" class="card-button">Saiba Mais</a>
+                    </div> 
+                    
+                  </div>
                 </div>
-            </div>
+                <!-- Single Card -->
+                <div class="card swiper-slide">
+                  <div class="card-image">
+                    <img src="assets/Javabasico.png" alt="Java Básico" />
+                    <div class="card-tag">Back-end</div>
+                  </div>
+                  <div class="card-content">
+                    <h3 class="card-title">Java Básico</h3>
+                    <p class="card-text">Esse curso é uma introdução à programação em Java, focado em iniciantes, cobrindo desde conceitos fundamentais até tópicos intermediários de forma clara.</p>
+                     <div class="card-footer">
+                      <div class="card-profile">
+                         <!-- <img src="images/user-2.jpg" alt="Jessica Chen" />
+                        <div class="card-profile-info">
+                          <span class="card-profile-name">Jessica Chen</span>
+                          <span class="card-profile-role">Developer</span>
+                        </div>  -->
+                      </div>
 
-            <div class="card">
-                <img src="assets/CursoJavaIntermediario.png" alt="">
-                <div class="card-content">
-                    <h3>Java Intermediário</h3>
-                    <p>Completo</p>
-                    <a href="" class="btn">Saiba mais</a>
+                      <a href="#" class="card-button">Saiba Mais</a>
+                        
+                    </div> 
+                   
+                  </div>
                 </div>
-            </div>
-
-            <div class="card">
-                <img src="assets/phonegap_cordova_loiane.png" alt="">
-                <div class="card-content">
-                    <h3>Phonegap e Apache Cordova</h3>
-                    <p>Completo</p>
-                    <a href="" class="btn">Saiba mais</a>
+                <!-- Single Card -->
+                <div class="card swiper-slide">
+                  <div class="card-image">
+                    <img src="assets/EDAjava.png" alt="Estrutura de Dados com Java" />
+                    <div class="card-tag">Fundamentos de Programação</div>
+                  </div>
+                  <div class="card-content">
+                    <h3 class="card-title">Estrutura de Dados com Java</h3>
+                    <p class="card-text">Nesse curso vamos aprender a teoria, como podemos utilizar a estrutura de dados ou algoritmo em projetos reais, além de aprender as estruturas presentes na linguagem Java.</p>
+                     <div class="card-footer">
+                      <div class="card-profile">
+                        <!-- <img src="images/user-3.jpg" alt="Marcus Johnson" />
+                        <div class="card-profile-info">
+                          <span class="card-profile-name">Marcus Johnson</span>
+                          <span class="card-profile-role">UX Researcher</span>
+                        </div> -->
+                      </div>
+                      
+                    </div> 
+                    <a href="#" class="card-button">Saiba Mais</a>
+                  </div>
                 </div>
-            </div>
+                <!-- Single Card -->
+                <div class="card swiper-slide">
+                  <div class="card-image">
+                    <img src="assets/CursoJavaIntermediario.png" alt="Java Intermediário" />
+                    <div class="card-tag">Back-end</div>
+                  </div>
+                  <div class="card-content">
+                    <h3 class="card-title">Java Intermediário</h3>
+                    <p class="card-text">O Curso de Java Intermediário é para desenvolvedores que dominam o básico e desejam aprimorar suas habilidades, preparando-os para desafios mais complexos e projetos avançados em Java.</p>
+                    <div class="card-footer">
+                      <div class="card-profile">
+                        <!-- <img src="images/user-4.jpg" alt="Sarah Miller" />
+                        <div class="card-profile-info">
+                          <span class="card-profile-name">Sarah Miller</span>
+                          <span class="card-profile-role">Interior Designer</span>
+                        </div> -->
+                      </div>
+                      
+                    </div> 
+                    <a href="#" class="card-button">Saiba Mais</a>
 
-            <div class="card">
-                <img src="assets/curso-crud-angular-spring.png" alt="">
-                <div class="card-content">
-                    <h3>CRUD Angular + Spring</h3>
-                    <p>Completo</p>
-                    <a href="" class="btn">Saiba mais</a>
+                  </div>
                 </div>
-            </div>
-
-            <div class="card">
-                <img src="assets/curso-extjs4.png" alt="">
-                <div class="card-content">
-                    <h3>Fundamentos Ext JS 4</h3>
-                    <p>Completo</p>
-                    <a href="" class="btn">Saiba mais</a>
+                <!-- Single Card -->
+                <div class="card swiper-slide">
+                  <div class="card-image">
+                    <img src="assets/phonegap_cordova_loiane.png" alt="Phonegap e Apache Cordova" />
+                    <div class="card-tag">Mobile</div>
+                  </div>
+                  <div class="card-content">
+                    <h3 class="card-title">Phonegap e Apache Cordova</h3>
+                    <p class="card-text">Esse curso ensina a criar aplicativos móveis híbridos. O curso abrange desde a configuração do ambiente até a integração com recursos nativos do dispositivo. Ideal para desenvolver para Android e iOS de forma prática.</p>
+                    <div class="card-footer">
+                      <div class="card-profile">
+                        <!-- <img src="images/user-5.jpg" alt="David Park" />
+                        <div class="card-profile-info">
+                          <span class="card-profile-name">David Park</span>
+                          <span class="card-profile-role">Motion Designer</span>
+                        </div> -->
+                      </div>
+                     
+                    </div> 
+                    <a href="#" class="card-button">Saiba Mais</a>
+                  </div>
                 </div>
-            </div>
-        </div>
 
-       </section>
+                <div class="card swiper-slide">
+                    <div class="card-image">
+                      <img src="assets/curso-crud-angular-spring.png" alt="CRUD Angular + Spring" />
+                      <div class="card-tag">Full-stack</div>
+                    </div>
+                    <div class="card-content">
+                      <h3 class="card-title">CRUD Angular + Spring</h3>
+                      <p class="card-text">O Curso de CRUD Angular + Spring da Loiane Groner ensina a construir uma aplicação web completa, utilizando Angular no front-end e Spring no back-end.</p>
+                       <div class="card-footer">
+                        <div class="card-profile">
+                          <!-- <img src="images/user-5.jpg" alt="David Park" />
+                          <div class="card-profile-info">
+                            <span class="card-profile-name">David Park</span>
+                            <span class="card-profile-role">Motion Designer</span>
+                          </div> -->
+                        </div>
+                       
+                      </div> 
+                      <a href="#" class="card-button">Saiba Mais</a>
+                    </div>
+                  </div>
+
+                  <div class="card swiper-slide">
+                    <div class="card-image">
+                      <img src="assets/curso-extjs4.png" alt="Fundamentos Ext JS 4" />
+                      <div class="card-tag">Front-end</div>
+                    </div>
+                    <div class="card-content">
+                      <h3 class="card-title">Fundamentos Ext JS 4</h3>
+                      <p class="card-text">Neste curso, você aprenderá os conceitos fundamentais do Ext JS 4, como componentes, layouts, eventos e modelos de dados, além de explorar como construir interfaces com grids, formulários e painéis interativos. </p>
+                      <div class="card-footer">
+                        <div class="card-profile">
+                          <!-- <img src="images/user-5.jpg" alt="David Park" />
+                          <div class="card-profile-info">
+                            <span class="card-profile-name">David Park</span>
+                            <span class="card-profile-role">Motion Designer</span>
+                          </div> -->
+                        </div>
+                       
+                      </div> 
+                      <a href="#" class="card-button">Saiba Mais</a>
+                    </div>
+                  </div>
+              </div>
+              <!-- Pagination -->
+              <div class="swiper-pagination"></div>
+              <!-- Navigation Buttons -->
+              <div class="swiper-slide-button swiper-button-prev"></div>
+              <div class="swiper-slide-button swiper-button-next"></div>
+            </div>
+          </div>
+</section>
+      <!-- Linking Swiper script -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <!-- Custom Script -->
+      <script src="script.js"></script>
+
           
 
 
